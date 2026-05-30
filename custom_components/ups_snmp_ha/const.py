@@ -113,11 +113,18 @@ SNMP_SENSOR_DESCRIPTIONS = [
         data_key="battery_temperature",
     ),
     UpsSnmpSensorDescription(
-        key="environmental_temperature",
-        name="Environmental Temperature",
+        key="environmental_temperature_1",
+        name="Environmental Temperature 1",
         native_unit_of_measurement="°C",
         state_class=SensorStateClass.MEASUREMENT,
-        data_key="environmental_temperature",
+        data_key="environmental_temperature_1",
+    ),
+    UpsSnmpSensorDescription(
+        key="environmental_temperature_2",
+        name="Environmental Temperature 2",
+        native_unit_of_measurement="°C",
+        state_class=SensorStateClass.MEASUREMENT,
+        data_key="environmental_temperature_2",
     ),
     UpsSnmpSensorDescription(
         key="battery_voltage",

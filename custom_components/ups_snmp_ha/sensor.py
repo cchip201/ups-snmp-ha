@@ -68,6 +68,14 @@ class UpsSnmpSensor(CoordinatorEntity, SensorEntity):
         )
 
     @property
+    def name(self) -> str | None:
+        """Return the name of the entity."""
+        dynamic_name = self.coordinator.data.get(f"{self.entity_description.data_key}_name")
+        if dynamic_name:
+            return dynamic_name
+        return self.entity_description.name
+
+    @property
     def native_value(self):
         """Return the latest value from the coordinator."""
         return self.coordinator.data.get(self.entity_description.data_key)
