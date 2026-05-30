@@ -60,6 +60,7 @@ APC_MIB_OIDS: dict[str, dict[str, Any]] = {
     "battery_status": {"oid": "1.3.6.1.4.1.318.1.1.1.2.1.1.0"},
     "battery_charge": {"oid": "1.3.6.1.4.1.318.1.1.1.2.2.1.0"},
     "battery_temperature": {"oid": "1.3.6.1.4.1.318.1.1.1.2.2.2.0"},
+    "environmental_temperature": {"oid": "1.3.6.1.4.1.318.1.1.25.1.2.1.6.1"},
     "runtime_remaining": {
         "oid": "1.3.6.1.4.1.318.1.1.1.2.2.3.0",
         "timeticks_minutes": True,
