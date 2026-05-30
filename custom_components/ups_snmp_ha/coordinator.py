@@ -36,6 +36,9 @@ UPS_MIB_OIDS: dict[str, dict[str, Any]] = {
     "battery_charge": {"oid": "1.3.6.1.2.1.33.1.2.4.0"},
     "battery_voltage": {"oid": "1.3.6.1.2.1.33.1.2.5.0", "scale": 0.1},
     "battery_temperature": {"oid": "1.3.6.1.2.1.33.1.2.7.0"},
+    "environmental_temperature": {
+        "oids": ["1.3.6.1.4.1.318.1.1.25.1.2.1.6.1", "1.3.6.1.4.1.318.1.1.10.2.3.2.1.4.1"]
+    },
     "input_line_count": {"oid": "1.3.6.1.2.1.33.1.3.2.0"},
     "input_frequency": {"oid": "1.3.6.1.2.1.33.1.3.3.1.2.1", "scale": 0.1},
     "input_voltage": {"oid": "1.3.6.1.2.1.33.1.3.3.1.3.1"},
@@ -60,7 +63,9 @@ APC_MIB_OIDS: dict[str, dict[str, Any]] = {
     "battery_status": {"oid": "1.3.6.1.4.1.318.1.1.1.2.1.1.0"},
     "battery_charge": {"oid": "1.3.6.1.4.1.318.1.1.1.2.2.1.0"},
     "battery_temperature": {"oid": "1.3.6.1.4.1.318.1.1.1.2.2.2.0"},
-    "environmental_temperature": {"oid": "1.3.6.1.4.1.318.1.1.25.1.2.1.6.1"},
+    "environmental_temperature": {
+        "oids": ["1.3.6.1.4.1.318.1.1.25.1.2.1.6.1", "1.3.6.1.4.1.318.1.1.10.2.3.2.1.4.1"]
+    },
     "runtime_remaining": {
         "oid": "1.3.6.1.4.1.318.1.1.1.2.2.3.0",
         "timeticks_minutes": True,
